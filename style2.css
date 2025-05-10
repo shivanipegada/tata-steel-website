@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .popup {
+    background-color: #003152;
+    color: white;
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+    position: relative;
+  }
+  
+  .popup-header {
+    font-size: 20px;
+    color: #42a5f5;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .skip-text {
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  
+  .toggle-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+  .toggle-box {
+    text-align: center;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px; width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #003152;
+    transition: 0.4s;
+    border-radius: 50%;
+    border: 2px solid orange;
+  }
+  
+  input:checked + .slider {
+    background-color: #42a5f5;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .note {
+    font-size: 13px;
+    color: #ccc;
+    margin: 10px 0;
+  }
+  
+  .user-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .user-box {
+    background: #f4f4f4;
+    color: #003152;
+    padding: 15px;
+    border-radius: 10px;
+    width: 120px;
+    cursor: pointer;
+  }
+  
+  .user-box img {
+    width: 40px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+  }
+  
+  .user-box div {
+    font-weight: bold;
+  }
+  
+  .footer-note {
+    background: white;
+    color: black;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+  }
+  

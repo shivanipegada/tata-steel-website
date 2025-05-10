@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Accessibility Popup</title>
+  <link rel="stylesheet" href="./style2.css" />
+</head>
+<body>
+
+<!-- Popup Modal -->
+<div class="popup" id="accessibilityPopup">
+  <div class="popup-header">
+    <span>Select category of user</span>
+    <span class="skip-text">Other users can skip ✕</span>
+  </div>
+
+  <div class="toggle-section">
+    <div class="toggle-box">
+      <label class="switch">
+        <input type="checkbox" id="audioToggle">
+        <span class="slider"></span>
+      </label>
+      <div>Audio</div>
+    </div>
+    <div class="toggle-box">
+      <label class="switch">
+        <input type="checkbox" id="mouseToggle">
+        <span class="slider"></span>
+      </label>
+      <div>Mouse Trail</div>
+    </div>
+  </div>
+
+  <p class="note"><strong style="color:red">Note*:</strong> Toggle above buttons to switch ON/OFF audio or mouse trail functionality</p>
+
+  <div class="user-icons">
+    <div class="user-box">
+      <img src="https://img.icons8.com/ios-filled/100/000000/visible--v1.png" alt="Eye icon">
+      <div>Visually Impaired</div>
+    </div>
+    <div class="user-box">
+      <img src="https://img.icons8.com/ios-filled/100/000000/hearing--v1.png" alt="Ear icon">
+      <div>Hearing Impaired</div>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    <strong>Note:</strong> If you close this popup, you can still open it by clicking gear icon ⚙ on the extreme right hand top corner
+  </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>

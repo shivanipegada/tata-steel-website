@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary " > -->
+    <nav class="navbar navbar-expand-lg " style="background: rgba(0, 0, 0, 0.2); ;">
+      <!-- <nav class="navbar navbar-expand-lg bg-primary"> -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://www.tatasteel.com/images/tata-steel-logo.png"
+            class="tata-image"
+        /></a>
+
+        <!-- canav bar button of menu  -->
+
+        <a
+          class="btn btn"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          <i class="fa-solid fa-bars"></i> Menu
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navbar  -->
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link ps-lg-3" href="./index.html"
+                ><i class="fa-solid fa-house" id="icons"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-lg-3" href="./index2contact.html"
+                ><i class="fa-solid fa-phone" id="icons"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-lg-3" href="#"
+                ><i class="fa-solid fa-magnifying-glass" id="icons"></i
+              ></a>
+            </li>
+
+            <!-- search button html  -->
+
+            <div id="search-box" class="container mt-3 d-none">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="search-input"
+                  placeholder="Search pages..."
+                />
+                <button class="btn btn-primary" onclick="handleSearch()">
+                  Search
+                </button>
+              </div>
+              <p id="search-result" class="text-danger mt-2"></p>
+            </div>
+
+            <!-- till here html file  -->
+
+            <li class="nav-item">
+              <a class="nav-link ps-lg-3" href="./index8.html"
+                ><i class="fa-solid fa-globe" id="icons"></i
+              ></a>
+
+              <!-- <ul class="dropdown-menu">
+                <li><h6 class="dropdown-header">Dropdown header</h6></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+              </ul> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-lg-3" href="#"
+                ><i class="fa-solid fa-person" id="person-icon"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-lg-3" href="#"
+                ><i class="fa-solid fa-gear" id="settings-icon"></i
+              ></a>
+            </li>
+
+            <!-- <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#"><img src="https://www.tatasteel.com/images/tata_logo.png" alt=""></a>
+               </li> -->
+          </ul>
+
+          <a class="nav-link active" aria-current="page" href="#"
+            ><img
+              src="https://www.tatasteel.com/images/tata_logo.png"
+              alt="tata-logo"
+              class="tata-logo"
+              style="position: relative; top: -20px"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- canva bar -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5> -->
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <a href="./index3corporate.html">Corporate</a>
+        </div>
+        <div>
+          <a href="./index4sustainability.html">Sustainability</a>
+        </div>
+        <div>
+          <a href="./index5productsandSolution.html">Products & Solutions</a>
+        </div>
+        <div>
+          <a href="./index6investors.html">Investors</a>
+        </div>
+
+        <div>
+          <a href="./index7carrer.html">Careers</a>
+        </div>
+        <div>
+          <a href="./index2contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel">
+      <section class="slide slide1">
+        <video autoplay muted loop playsinline class="video-bg">
+          <source
+            src="https://www.tatasteel.com/media/23370/financial-resuts_desktop-banner-3.mp4"
+            type="video/mp4"
+          />
+          <!-- Your browser does not support the video tag. -->
+        </video>
+      </section>
+
+      <section class="slide slide2">
+        <img height="100%" width="100%" src="https://www.tatasteel.com/media/21747/world-steel-banner-1400x790.jpg"/>
+      </section>
+
+      <section class="slide slide3">
+        <h3 class="text-title">PRODUCTS & SOLUTIONS</h3>
+        <div class="symbols">
+          <div class="india-image">
+            <img src="https://www.tatasteel.com/media/2868/india_.png" alt="" />
+            <h2>India</h2>
+          </div>
+          <div class="europe-image">
+            <img
+              src="https://www.tatasteel.com/media/2867/europe_.png"
+              alt=""
+            />
+            <h2>Europe</h2>
+          </div>
+          <div class="sea-image">
+            <img src="https://www.tatasteel.com/media/2869/sea_.png" alt="" />
+            <h2>East Asia</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide slide4">
+        <div class="stock-quotes">
+          <br />
+          <h3>Stock Quotes</h3>
+          <br /><br /><br />
+          <p>Latest updated on 06 Apr 17</p>
+        </div>
+
+        <div class="performance">
+          <br />
+          <h3>Performance</h3>
+          <br />
+          <h4>3QFY25 Financial Results</h4>
+          <br />
+          <p>>Earnings Release</p>
+          <p>>Analyst Presentation</p>
+        </div>
+
+        <div class="exchange">
+          <br />
+          <h3>Exchange Releases</h3>
+          <br />
+          <p>
+            >Financial Results for the quarter and financial year ended December
+            31, 2024
+          </p>
+        </div>
+      </section>
+
+      <section class="slide slide5">
+        <div class="container-4">
+          <!-- <h1 style="text-align: center">MEDIA</h1>  -->
+
+          <div class="caurosel">
+            <div class="tata-steel-image">
+              <img
+                src="https://www.tatasteel.com/images/feeds-backup-img.jpg"
+                alt=""
+                class="tata-image-2"
+              />
+            </div>
+
+            <div class="tata-steel-image2">
+              <img
+                src="https://www.tatasteel.com/media/23766/tata-steel-ip-award-mobile.jpg"
+                alt=""
+                class="tata-image-2"
+              />
+            </div>
+
+            <div class="tata-steel-image2">
+              <img
+                src="https://w3assets.angelone.in/wp-content/uploads/2024/07/Tata-Steel-1QFY2025-Record-Sales-and-768x388.jpg"
+                alt=""
+                class="tata-image-2"
+              />
+            </div>
+
+            <div class="tata-steel-image3">
+              <img
+                src="https://www.tatasteel.com/images/feeds-backup-img.jpg"
+                alt=""
+                class="tata-image-2"
+              />
+            </div>
+
+            <div class="tata-steel-image4">
+              <img
+                src="https://i0.wp.com/stockify.net.in/wp-content/uploads/2024/05/Tata-Capital-seeks-shareholders-nod-on-related-party-deals-with-Tata-Steel.png?fit=900%2C600&ssl=1"
+                alt=""
+                class="tata-image-2"
+              />
+            </div>
+
+            <div class="tata-steel-image2">
+              <img
+                src="https://cdn.slidesharecdn.com/ss_thumbnails/tatasteelteam4-131009131630-phpapp02-thumbnail.jpg?width=560&fit=bounds"
+                alt=""
+                class="tata-image-2"
+              />
+            </div>
+
+            <div class="tata-steel-image3">
+              <img
+                src="https://www.tatasteel.com/images/feeds-backup-img.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="tata-steel-image4">
+              <img
+                src="https://i0.wp.com/stockify.net.in/wp-content/uploads/2024/05/Tata-Capital-seeks-shareholders-nod-on-related-party-deals-with-Tata-Steel.png?fit=900%2C600&ssl=1"
+                alt=""
+                class="tata-image-2"
+              />
+            </div>
+          </div>
+
+          <div class="caurosel-2">
+            <div class="tata-steel-image2">
+              <img
+                src="https://wp-api.pocketful.in/blog/wp-content/uploads/2024/08/tata-steel-case_study.jpg"
+                alt=""
+                class="tata-image-2"
+              />
+            </div>
+
+            <div class="tata-steel-image2">
+              <img
+                src="https://cdn.slidesharecdn.com/ss_thumbnails/tatasteelinterviewprep-221116115515-6677616f-thumbnail.jpg?width=560&fit=bounds"
+                alt=""
+                class="tata-image-2"
+              />
+            </div>
+
+            <div class="tata-steel-image2">
+              <img
+                src="https://cdn.slidesharecdn.com/ss_thumbnails/tatasteelteam4-131009131630-phpapp02-thumbnail.jpg?width=560&fit=bounds"
+                alt=""
+                class="tata-image-2"
+              />
+            </div>
+
+            <div class="tata-steel-image2">
+              <img
+                src="https://cdn.slidesharecdn.com/ss_thumbnails/tatasteel-ideation-121129115531-phpapp01-thumbnail.jpg?width=560&fit=bounds"
+                alt=""
+                class="tata-image-2"
+              />
+            </div>
+
+            <div class="tata-steel-image2">
+              <img
+                src="https://cdn.slidesharecdn.com/ss_thumbnails/tatasteelteam4-131009131630-phpapp02-thumbnail.jpg?width=560&fit=bounds"
+                alt=""
+                class="tata-image-2"
+              />
+            </div>
+
+            <div class="tata-steel-image2">
+              <img
+                src="https://i.ytimg.com/vi/NkMGeYkVFl8/maxresdefault.jpg"
+                alt=""
+                class="tata-image-2"
+              />
+            </div>
+
+            <div class="tata-steel-image2">
+              <img
+                src="https://w3assets.angelone.in/wp-content/uploads/2024/07/Tata-Steel-1QFY2025-Record-Sales-and-768x388.jpg"
+                alt=""
+                class="tata-image-2"
+              />
+            </div>
+
+            <div class="tata-steel-image2">
+              <img
+                src="https://cdn.slidesharecdn.com/ss_thumbnails/tatasteel-ideation-121129115531-phpapp01-thumbnail.jpg?width=560&fit=bounds"
+                alt=""
+                class="tata-image-2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide slide6">
+        <div class="container-5">
+          <h1 class="heading" style="color: white; padding-top: 120px">
+            A Great Place to Work-CertifiedTM organisation, <br />we are spread
+            across globe with an employee <br />
+            base of over 77,000.
+          </h1>
+        </div>
+      </section>
+    </div>
+
+    <!-- NAV DOTS -->
+
+    <div class="nav-dots">
+      <div class="dot active" onclick="goToSlide(0)"></div>
+      <div class="dot" onclick="goToSlide(1)"></div>
+      <div class="dot" onclick="goToSlide(2)"></div>
+      <div class="dot" onclick="goToSlide(3)"></div>
+      <div class="dot" onclick="goToSlide(4)"></div>
+      <div class="dot" onclick="goToSlide(5)"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
